@@ -56,15 +56,15 @@ https://github.com/watchtowrlabs/watchTowr-vs-FreePBX-CVE-2025-57819/blob/main/w
 ##
 
 ## 10 - There is a service in this machine called "dahdi" which its purpose is to Just watch files if they got modified or changed or anything and it runs as root, I checked the init.conf and as we can see its owned by us and we can write on it.
-<img width="1247" height="251" alt="Screenshot 2026-11-11 124030" src="https://github.com/user-attachments/assets/c4c689b9-6572-4cec-a86a-dd2243e20aa0" />
 
-##
-## 12 - We inject a Reverse shell Payload
+
+
+  We inject a Reverse shell Payload
 <img width="1866" height="647" alt="Screenshot 2026-11-11 125143" src="https://github.com/user-attachments/assets/2cff2a1a-ceb7-4215-929e-2b4786928708" />
 ##
 
 
-## 13-  we need to Trigger the service we can trigger it by creating a file using touch command, or using echo "restart"> /path/to/file.
+## 11-  we need to Trigger the service we can trigger it by creating a file using touch command, or using echo "restart"> /path/to/file.
 ```
 touch /var/spool/asterisk/sysadmin/dahdi_restart
 or
@@ -74,7 +74,7 @@ Like that we are Triggering the script on run the malicious config file we repla
 <img width="1882" height="646" alt="Screenshot 2026-11-11 125255" src="https://github.com/user-attachments/assets/313ef4ee-cee1-49ef-9fa4-35b0f9971fd8" />
 ##
 
-## 14 - Then we get a shell and we are root 
+## 12- Then we get a shell and we are root 
 <img width="1883" height="646" alt="Screenshot 2026-11-11 125356" src="https://github.com/user-attachments/assets/fb3a77a3-3e03-4154-8a85-eae41e539b71" />
 
 
