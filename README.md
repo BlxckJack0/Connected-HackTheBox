@@ -34,7 +34,7 @@ https://github.com/watchtowrlabs/watchTowr-vs-FreePBX-CVE-2025-57819/blob/main/w
 
 ##
 
-## 6-  NICE, we have a shell
+## 6-  NICE, we have a RCE on the server
 <img width="1917" height="987" alt="Screenshot 2026-11-11 123307" src="https://github.com/user-attachments/assets/141b7793-2eaa-4481-b6a8-b339db926334" />
 ##
 
